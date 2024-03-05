@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(223, 177, 79);
+  background-color: #16697a;
 }
 
 .main-container {
@@ -62,6 +62,10 @@ body {
   font-weight: 600;
   font-style: oblique;
   margin-bottom: 10px;
+}
+
+.main-container #designationid {
+  color: #ffa62b;
 }
 
 .main-container .my-skills {
@@ -172,6 +176,7 @@ body {
   border: 3px solid transparent;
   font-size: 1em;
   font-weight: 800;
+  cursor: pointer;
 
   &:hover {
     border-radius: 1.2rem;
