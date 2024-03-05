@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Victor+Mono:ital,wght@0,100..700;1,100..700&family=Vina+Sans&display=swap");
 
 * {
   padding: 0px;
@@ -47,7 +48,7 @@ body {
   justify-content: center;
 }
 
-.main-container .name {
+.main-container .me .name {
   font-family: "Kode Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -56,7 +57,7 @@ body {
   color: #ede7e3;
 }
 
-.main-container .designation {
+.main-container .me .designation {
   font-family: "Kode Mono", monospace;
   font-optical-sizing: initial;
   font-weight: 600;
@@ -64,8 +65,11 @@ body {
   margin-bottom: 10px;
 }
 
-.main-container #designationid {
-  color: #ffa62b;
+.main-container .me .designation #designationid {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .main-container .my-skills {
