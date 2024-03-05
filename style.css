@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Doodle+Shadow&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --retro-color-1: rgb(0 191 173);
+  --retro-color-2: rgb(187 76 32);
+  --retro-brown: #7b2b15;
+  --retro-blue: #4981a9;
+  --retro-dark-blue: #235595;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(223, 177, 79);
+}
+
+.main-container {
+  width: 35%;
+  height: 600px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #82c0cc;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.main-container .my-photo img {
+  margin: 20px 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.main-container .me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .name {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: xx-large;
+  color: #ede7e3;
+}
+
+.main-container .designation {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: initial;
+  font-weight: 600;
+  font-style: oblique;
+  margin-bottom: 10px;
+}
+
+.main-container .my-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.main-container .my-skills button {
+  background-color: #489fb5; /* Green */
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main-container .my-skills a {
+  text-decoration: none;
+  color: white;
+}
+
+.social {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.social a {
+  display: inline-block;
+  padding: 5px;
+}
+.social a i {
+  color: #3b1e59;
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
+  line-height: 50px !important;
+  border: 3px solid transparent;
+  opacity: 0.8;
+  transition-property: transform;
+  -moz-transition-property: -moz-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition: all 0.6s cubic-bezier(0.88, -0.48, 0.38, 1.85);
+  border-radius: 50%;
+}
+.social a i:hover {
+  opacity: 1;
+  border-radius: 35%;
+}
+.social a:hover i.fa-linkedin-in,
+.social a:hover i.fa-telegram-plane {
+  transition: 0.6s ease-in;
+  background: #0088cc;
+  color: white;
+  border: 3px solid #00aaff;
+
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.social a:hover i.fa-at {
+  transition: 0.6s ease-in;
+  background: #d44638;
+  color: white;
+  border: 3px solid #fd8e8e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.social a:hover i.fa-instagram {
+  transition: 0.6s ease-in;
+  background: linear-gradient(
+    #f58529 20%,
+    #feda77 50%,
+    #dd2a7b 75%,
+    #8134af 90%,
+    #515bd4
+  );
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  border: 3px solid #fd8e8e;
+  color: white;
+}
+
+.social a:hover i.fa-github {
+  transition: 0.6s ease-in;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  border: 3px solid #010409;
+  background-color: #2d3139;
+  color: white;
+}
+
+.main-container .interested {
+  display: flex;
+  gap: 20px;
+}
+
+.main-container .interested button {
+  transition: all ease-in 120ms;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--retro-brown);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  font-size: 1em;
+  font-weight: 800;
+
+  &:hover {
+    border-radius: 1.2rem;
+    transform: translate(-11px, -11px);
+    box-shadow: 5px 5px var(--retro-color-1), 11px 11px var(--retro-color-2);
+  }
+}
