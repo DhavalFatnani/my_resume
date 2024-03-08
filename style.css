@@ -7,11 +7,6 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --retro-color-1: rgb(0 191 173);
-  --retro-color-2: rgb(187 76 32);
-  --retro-brown: #7b2b15;
-  --retro-blue: #4981a9;
-  --retro-dark-blue: #235595;
 }
 
 body {
@@ -24,7 +19,7 @@ body {
 
 .main-container {
   width: 35%;
-  height: 600px;
+  height: auto;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -181,10 +176,49 @@ body {
   font-size: 1em;
   font-weight: 800;
   cursor: pointer;
+  margin-bottom: 20px;
 
   &:hover {
     border-radius: 1.2rem;
     transform: translate(-11px, -11px);
     box-shadow: 5px 5px var(--retro-color-1), 11px 11px var(--retro-color-2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .main-container .my-photo img {
+    width: 100px;
+  }
+
+  .main-container .me .name {
+    font-size: 1.725em;
+  }
+
+  .main-container .me .designation {
+    font-size: 80%;
+  }
+
+  .main-container .my-skills button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 1px 1px;
+  }
+
+  .social a i {
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 50px !important;
+  }
+
+  .main-container .interested button {
+    margin-top: 10px;
+    font-size: 0.6em;
   }
 }
