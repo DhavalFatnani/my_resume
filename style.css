@@ -7,6 +7,9 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --retro-color-1: rgb(0 191 173);
+  --retro-color-2: rgb(187 76 32);
+  --retro-brown: #7b2b15;
 }
 
 body {
